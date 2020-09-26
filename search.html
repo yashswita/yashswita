@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html>
+
+<head>
+  <title>Yashu's Arts</title>
+  <style>
+  h1{
+    text-align: center;
+    color: #cc3399;
+  }
+  h2{
+    text-align: center;
+    color:#cc9900 ;
+  }
+  /*to align the img to center*/
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  /*size of search box*/
+.search{
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 50%;
+  width: 200px;
+  height: 40px;
+  
+}
+
+</style>
+</head>
+
+<body>
+ <h1>___Welcome to the Yashswita's arts gallery___</h1>
+ <h2>Search here for Paintings and Sketches....</h2>
+<input type="search" value="" id="search" class="search" placeholder="Search here...." onchange="openPage()"><br><br>
+ <img src="C:\Users\DELL\Desktop\ganesha.jfif" class="center">
+<script>
+/*onpage will redirect to new page of what you are searching for*/
+function openPage(){
+ var x= document.getElementById("search").value;
+
+ if(x=== "Sketches"){
+  window.open("Sketches.html");
+ }
+
+ if(x=== "Paintings"){
+  window.open("Painting.html");
+ }
+}
+
+</script>
+</body>
+ </html>
